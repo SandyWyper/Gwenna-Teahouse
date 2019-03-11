@@ -87,7 +87,7 @@ header .right-large {
 }
 
 .header-slim {
-    background-image: url('../images/gwenna_logo_1.gif');
+    background-image: url("../images/gwenna_logo_1.gif");
     background-position: left;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -359,7 +359,7 @@ header .right-large {
 
 .location {
     grid-area: 2 / 7 / 3 / 10;
-    background-image: url('../images/map.png');
+    background-image: url("../images/map.png");
     background-size: cover;
 
     border: 15px solid rgb(172, 112, 86);
@@ -499,7 +499,7 @@ header .right-large {
 }
 .pic1 {
     grid-area: 1 / 7 / 2 / 10;
-    background-image: url('../images/open.jpg');
+    background-image: url("../images/open.jpg");
     opacity: 0.70;
     background-size: cover;
     background-repeat: no-repeat;
@@ -519,7 +519,7 @@ header .right-large {
     grid-area: 3 / 1 / 4 / 5;
     background-attachment: fixed;
 
-    background-image: url('../images/cake&flowers.jpg');
+    background-image: url("../images/cake&flowers.jpg");
     opacity: 0.70;
     border: 1px solid grey;
     background-repeat: no-repeat;
@@ -535,7 +535,7 @@ header .right-large {
     display: none;
     background-attachment: fixed;
 
-    background-image: url('../images/walnut-cake.jpg');
+    background-image: url("../images/walnut-cake.jpg");
     opacity: 0.70;
     border: 1px solid grey;
     background-repeat: no-repeat;
@@ -551,7 +551,7 @@ header .right-large {
 
 .old-paint {
     grid-area: 5 / 4 / 6 / 8;
-    background-image: url('../images/gwenna.webp');
+    background-image: url("../images/gwenna.webp");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -739,7 +739,7 @@ footer {
     .pic2 {
         display: block;
         grid-area: 7 / 5 / 8 / 9;
-        background-image: url('../images/outside-tea.jpg');
+        background-image: url("../images/outside-tea.jpg");
         background-size: cover;
         opacity: 0.85;
     }
@@ -762,7 +762,7 @@ footer {
     }
 
     .header-logo {
-        background-image: url('../images/gwenna_logo_1.gif');
+        background-image: url("../images/gwenna_logo_1.gif");
         background-position: 20%;
         background-size: auto 100%;
         background-repeat: no-repeat;
