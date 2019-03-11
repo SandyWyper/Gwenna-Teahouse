@@ -852,7 +852,7 @@ footer {
         border: none;
     }
 
-    .para1:before {
+/*    .para1:before {
         content: "";
         display: block;
         position: fixed;
@@ -866,7 +866,7 @@ footer {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-    }
+    }*/
 
     .menu {
         grid-area: 7 / 1 / 8 / 2;
