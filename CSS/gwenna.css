@@ -51,7 +51,7 @@ header {
 }
 
 .header-large {
-    background-image: url('../images/gwenna_logo_will_1.gif');
+    background-image: url("../images/gwenna_logo_will_1.gif");
     background-position: center;
     background-size: 960px 100%;
     background-repeat: no-repeat;
