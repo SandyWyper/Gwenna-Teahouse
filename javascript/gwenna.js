@@ -13,6 +13,16 @@ function readyPage() {
     // sets listeners for buttons requiring js actions
     document.querySelector('#open-menu').addEventListener("click", openSideMenu);
     document.querySelector('#close-menu').addEventListener("click", closeSideMenu);
+
+    //parallax plugin
+    var rellax = new Rellax('.rellax', {
+        speed: -5,
+        center: true,
+        round: true,
+        vertical: true,
+        horizontal: false,
+        wrapper: null
+            });
     playSlides();
 }
 
@@ -32,7 +42,7 @@ function closeSideMenu() {
 // nav bar transform
 // --------------------------------------------------------------------------------
 function checkScroll(e) {
-	//monitors the scroll position of the page to toggle a class that changes the nav-bar
+    //monitors the scroll position of the page to toggle a class that changes the nav-bar
     const scrolls = window.scrollY
 
     if (scrolls > (headerLarge.scrollHeight - 100) && headerLarge.classList.contains("reveal")) {

@@ -26,8 +26,6 @@ font-family: 'Inconsolata', monospace;
     --headerHeightSlim: 100px;
 }
 
-
-
 * {
     /*color: #211e20;*/
     margin: 0;
@@ -135,7 +133,6 @@ header .right-large {
     font-weight: 200;
     color: #211e20;
     transition: transform 0.3s;
-    /*transition: all .2s ease-in-out*/
 }
 
 .nav-bar ul {
@@ -258,7 +255,10 @@ header .right-large {
     max-width: 1024px;
     margin: 30px auto 0 auto;
 
-
+    /*    background-color: rgb(239, 235, 231);
+*/
+    background: transparent;
+    z-index: 0;
     /*side-menu push-over effect*/
     transition: margin-right 0.5s;
 }
@@ -473,7 +473,7 @@ header .right-large {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    z-index: -1;
+
 
     background-color: rgb(172, 112, 86);
     color: rgb(239, 235, 231);
@@ -518,39 +518,85 @@ header .right-large {
     display: none;
 }
 
-.para1 {
-    grid-area: 3 / 1 / 4 / 5;
-    background-attachment: fixed;
 
-    background-image: url("../images/cake&flowers.jpg");
-    opacity: 0.70;
+.para1box {
+    grid-area: 3 / 1 / 4 / 5;
+    position:relative;
+    overflow: hidden;
+
     border: 1px solid grey;
-    background-repeat: no-repeat;
-    background-size: 80% auto;
-    /*background-size: cover;*/
-    background-position: left bottom;
-    /*background-position: center;*/
+    -webkit-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
+}
+.para2box {
+    display:none;
+        position:relative;
+    overflow: hidden;
+
+    border: 1px solid grey;
+    -webkit-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
+}
+.para3box {
+    display:none;
+        position:relative;
+    overflow: hidden;
+
+    border: 1px solid grey;
     -webkit-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
     -moz-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
 }
 
+
+
+.para {
+    /*grid-area: 3 / 1 / 4 / 5;*/
+
+    /*background-image: url("../images/cake&flowers.jpg");*/
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 80% auto;*/
+
+    /*background-position: left bottom;*/
+
+
+/*
+            background: #eed;
+            color: #223;*/
+            /*line-height: 25vh;*/
+            /*text-align: left;*/
+            /*padding: 0 42pt;*/
+            display: block;
+            height: 150%;
+            width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            opacity: 0.70;
+}
+
+
+/*
 .para2 {
     display: none;
-    background-attachment: fixed;
 
-    background-image: url("../images/walnut-cake.jpg");
     opacity: 0.70;
     border: 1px solid grey;
+
+    background-image: url("../images/walnut-cake.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 80% auto;
-    /*background-size: cover;*/
     background-position: left bottom;
-    /*background-position: center;*/
+
     -webkit-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
     -moz-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
-}
+}*/
 
 
 .old-paint {
@@ -692,11 +738,15 @@ footer {
     }
 
 
-    .para1 {
+/*    .para1 {
         grid-area: 3 / 1 / 4 / 5;
-        /*background-position: left;*/
+        background-position: left;
         background-size: auto;
         background-position: 10% 0;
+    }*/
+    .para {
+        height:250%;
+        width:auto;
     }
 
     .menu {
@@ -710,11 +760,9 @@ footer {
         height: 90px;
     }
 
-    .para2 {
+    .para2box {
         grid-area: 4 / 6 / 5 / 9;
         display: block;
-        background-size: auto;
-        background-position: 10% 0;
     }
 
     .contact {
@@ -740,13 +788,13 @@ footer {
         grid-area: 6 / 1 / 7 / 5;
     }
 
-    .pic2 {
+/*    .pic2 {
         display: block;
         grid-area: 7 / 5 / 8 / 9;
         background-image: url("../images/outside-tea.jpg");
         background-size: cover;
         opacity: 0.85;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 600px) {
@@ -843,9 +891,20 @@ footer {
         padding: 10px 0 5px 0;
     }
 
-    .para1 {
+    .para1box {
         grid-area: 6 / 1 / 7 / 2;
         border: none;
+    }
+.para3box {
+    display: none;
+}
+.para2box {
+    display: block;
+      grid-area: 8 / 1 / 9 / 2;
+}
+    .para {
+        width:180%;
+        height: auto;
     }
 
     .menu {
@@ -862,7 +921,7 @@ footer {
         height: 90px;
     }
 
-    .pic2 {
+/*    .pic2 {
         grid-area: 8 / 1 / 9 / 2;
         background-size: cover;
         background-attachment: fixed;
@@ -871,7 +930,7 @@ footer {
         -webkit-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
         -moz-box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
         box-shadow: inset 0px 0px 38px 2px rgba(0, 0, 0, 1);
-    }
+    }*/
 
     .contact {
         grid-area: 9 / 1 / 10 / 2;
