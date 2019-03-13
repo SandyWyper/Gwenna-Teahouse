@@ -547,7 +547,7 @@ header .right-large {
 
 .old-paint {
     grid-area: 5 / 4 / 6 / 8;
-    background-image: url("../images/gwenna.webp");
+    background-image: url("../images/gwenna.jpg");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
