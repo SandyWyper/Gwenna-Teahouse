@@ -782,7 +782,7 @@ footer {
 
     .wrapper {
         display: grid;
-        grid-template: 100vw 275px 185px 175px 200px 120px 350px 130px 300px 100vw 350px 300px 200px / 100%;
+        grid-template: 100vw 350px 185px 175px 200px 120px 350px 130px 300px 100vw 350px 300px 200px / 100%;
         grid-row-gap: 0;
     }
 
@@ -792,7 +792,7 @@ footer {
 
     .welcome {
         grid-area: 2 / 1 / 3 / 2;
-        font-size: 5vw;
+        font-size: 22px;
         line-height: 7vw;
     }
 
