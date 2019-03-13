@@ -375,6 +375,7 @@ header .right-large {
     font-size: 25px;
     line-height: 35px;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .location a {
@@ -759,6 +760,7 @@ footer {
         grid-area: 7 / 5 / 8 / 9;
         background-image: url("../images/outside-tea.jpg");
         background-size: cover;
+        background-position: center;
         opacity: 0.85;
     }
 }
