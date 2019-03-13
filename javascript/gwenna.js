@@ -16,8 +16,7 @@ function readyPage() {
 
     //parallax plugin
     var rellax = new Rellax('.rellax', {
-        speed: -5,
-        center: true,
+        speed: -7,
         round: true,
         vertical: true,
         horizontal: false,
@@ -88,9 +87,9 @@ function playSlides() {
 function showSlides(n) {
     //take 'n' as an input of the slideIndex to be displayed
     //if slide index is too large, reset to 1
-    if (n > slides.length) { slideIndex = 1 }
+    if (n > slides.length) { slideIndex = 1 };
     // if slide index is less than 1, then set to maximum
-    if (n < 1) { slideIndex = slides.length }
+    if (n < 1) { slideIndex = slides.length };
     // if any slide has a class of "current-slide" change to previous-slide.
     for (let x = 0; x < slides.length; x++) {
         slides[x].className = slides[x].className.replace("previous-slide", "");
