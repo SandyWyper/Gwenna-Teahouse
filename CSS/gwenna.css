@@ -350,42 +350,33 @@ header .right-large {
     background-image: url("../images/map.png");
     background-size: cover;
 
-    border: 15px solid rgb(172, 112, 86);
+    border: 15px solid rgba(172, 112, 86, 0.8);
     margin: 2px;
 
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-
-    font-family: 'Muli', sans-serif;
-    font-size: 25px;
-    line-height: 35px;
-    text-align: center;
-    letter-spacing: 5px;
 }
 
 .location a {
-    display: block;
-    overflow: auto;
-    padding: 58px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 0;
+    width: 100%;
 
     color: rgb(24, 56, 99);
     text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 5px;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 
 .location a:hover {
     color: rgb(239, 235, 231);
-
-}
-
-.location:hover {
-    background-image: none;
-
-    color: rgb(239, 235, 231);
-    background-color: rgba(172, 112, 86, 0.7);
+    background-color: rgba(172, 112, 86, 0.8);
 }
 
 
@@ -688,7 +679,8 @@ footer {
     }
 
     .location a {
-        padding: 20px 0 10px 0;
+    padding: 30px 0;
+    font-size: 20px;
     }
 
     .para {
@@ -833,11 +825,10 @@ footer {
         grid-area: 5 / 1 / 6 / 2;
         font-size: 5vw;
         line-height: 6vw;
-        padding: 5px 0;
     }
 
     .location a {
-        padding: 10px 0 5px 0;
+        padding: 10px 0;
     }
 
     .para1box {
