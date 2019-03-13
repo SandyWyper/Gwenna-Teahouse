@@ -16,8 +16,7 @@ function readyPage() {
 
     //parallax plugin
     var rellax = new Rellax('.rellax', {
-        speed: -5,
-        center: true,
+        speed: -7,
         round: true,
         vertical: true,
         horizontal: false,
