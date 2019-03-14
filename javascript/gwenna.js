@@ -4,10 +4,7 @@ const headerSlim = document.querySelector('#slim-nav');
 const menuSec = document.querySelector('.menu');
 const slides = document.getElementsByClassName('slides');
 
-
-
 // const lazyImages = document.getElementsByClassName('lazy');
-
 const lazyImages = [].slice.call(document.getElementsByClassName("lazy"));
 let loaded = false;
 
