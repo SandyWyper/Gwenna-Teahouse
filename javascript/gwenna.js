@@ -16,12 +16,14 @@ function readyPage() {
 
     //parallax plugin
     var rellax = new Rellax('.rellax', {
-        speed: -7,
+        speed: -4.8,
         round: true,
         vertical: true,
         horizontal: false,
         wrapper: null
             });
+
+    //play image carousel
     playSlides();
 }
 
