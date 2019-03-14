@@ -1,7 +1,18 @@
 // 
 const headerLarge = document.querySelector('#home');
 const headerSlim = document.querySelector('#slim-nav');
+const menuSec = document.querySelector('.menu');
 const slides = document.getElementsByClassName('slides');
+
+
+
+// const lazyImages = document.getElementsByClassName('lazy');
+
+const lazyImages = [].slice.call(document.getElementsByClassName("lazy"));
+let loaded = false;
+
+
+
 // initialise slide show variables
 let slideIndex = 1;
 let autoPlay;
@@ -14,15 +25,17 @@ function readyPage() {
     document.querySelector('#open-menu').addEventListener("click", openSideMenu);
     document.querySelector('#close-menu').addEventListener("click", closeSideMenu);
 
+
+
     //parallax plugin
     var rellax = new Rellax('.rellax', {
-        speed: -7,
+        speed: -4.8,
         round: true,
         vertical: true,
         horizontal: false,
         wrapper: null
-            });
-    playSlides();
+    });
+
 }
 
 function openSideMenu() {
@@ -51,6 +64,18 @@ function checkScroll(e) {
         headerLarge.classList.toggle('reveal');
         headerSlim.classList.toggle('reveal');
     }
+
+    //lazy loading the image carousel
+    if (scrolls > menuSec.scrollHeight && loaded === false) {
+        // console.log("triggered");
+        loaded = true;
+        lazyImages.forEach((lazyImage) => {
+            lazyImage.src = lazyImage.dataset.src;
+        });
+        //start playing the image carousel
+        playSlides();
+    }
+
 }
 
 //scroll event throttler to stop the browser from overworking
@@ -63,8 +88,9 @@ function scrollThrottler() {
             scrollTimeout = null;
             checkScroll();
 
-            // The checkScroll will execute at a rate of 15fps
-        }, 20);
+
+            // The checkScroll will execute at a rate of 
+        }, 200);
     }
 }
 

@@ -152,7 +152,7 @@ header .right-large {
 
 .nav-bar a:hover {
     -webkit-transform: scale(1.2, 1.2);
-    -ms-transform: scale(5, 5);
+    -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
 }
 
@@ -431,6 +431,11 @@ header .right-large {
     color: rgb(239, 235, 231);
 }
 
+.contact a:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
 .social-icons {
     display: flex;
     justify-content: space-around;
@@ -438,7 +443,7 @@ header .right-large {
     width: 70%;
     margin: 0 auto;
 
-    font-size: 5vw;
+    font-size: 60px;
 }
 
 .about {
