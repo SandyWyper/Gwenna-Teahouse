@@ -65,7 +65,8 @@ function checkScroll(e) {
 
     //lazy loading the image carousel
     if (scrolls > menuSec.scrollHeight && loaded === false) {
-        // console.log("triggered");
+
+        // set loaded to true so that images are only loaded once
         loaded = true;
         lazyImages.forEach((lazyImage) => {
             lazyImage.src = lazyImage.dataset.src;
@@ -132,14 +133,13 @@ function smoothScroll(e) {
 
         const hash = this.hash;
 
-
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         }, 800);
     }
 }
 
-
+//---------------------------------------------------------------------------------------
 
 
 
