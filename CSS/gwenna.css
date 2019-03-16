@@ -33,8 +33,9 @@ font-family: 'Inconsolata', monospace;
 }
 
 body {
-    overflow-x: hidden;
+    /*overflow: hidden;*/
     background-color: rgb(239, 235, 231);
+
 }
 
 header {
@@ -682,11 +683,12 @@ footer p {
     }
 
     .open-content .first-div {
-        min-width: 400px;
+        min-width: 50%;
     }
 
     .open-content .second-div {
-        padding: 0 40px;
+        padding: 0 80px 0 0 ;
+        min-width: 50%;
     }
 
 
@@ -803,7 +805,7 @@ footer p {
 
     .wrapper {
         display: grid;
-        grid-template: 100vw 350px 185px 175px 200px 120px 350px 130px 300px 100vw 300px 300px 200px / 100%;
+        grid-template: 100vw 350px 195px 175px 200px 120px 350px 130px 300px 100vw 300px 300px 200px / 100%;
         grid-row-gap: 0;
     }
 
@@ -819,19 +821,23 @@ footer p {
 
     .open {
         grid-area: 3 / 1 / 5/ 2;
-        padding: 20px;
+        padding: 50px 20px 20px 20px;
     }
 
     .open-content {
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 25px;
+    }
+    .open h4 {
+        font-size: 18px;
     }
 
     .open i {
-        font-size: 35px;
+        font-size: 25px;
+        line-height: 1px;
     }
 
     .open-content .first-div {
@@ -840,6 +846,7 @@ footer p {
 
     .open-content .second-div {
         padding: 0 29px;
+        min-width: 0;
     }
 
     .location {
