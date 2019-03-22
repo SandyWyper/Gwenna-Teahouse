@@ -4,7 +4,7 @@ const headerSlim = document.querySelector('#slim-nav');
 const menuSec = document.querySelector('.menu');
 const slides = document.getElementsByClassName('slides');
 
-// const lazyImages = document.getElementsByClassName('lazy');
+// take a nodelist of elements with class name 'lazy' and put them into an array
 const lazyImages = [].slice.call(document.getElementsByClassName("lazy"));
 let loaded = false;
 
@@ -21,11 +21,12 @@ function readyPage() {
     // sets listeners for buttons requiring js actions
     document.querySelector('#open-menu').addEventListener("click", openSideMenu);
     document.querySelector('#close-menu').addEventListener("click", closeSideMenu);
-
+    
+    $('header a').on("click", smoothScroll);
 
 
     //parallax plugin
-    var rellax = new Rellax('.rellax', {
+    const rellax = new Rellax('.rellax', {
         speed: -4.8,
         round: true,
         vertical: true,
@@ -64,7 +65,8 @@ function checkScroll(e) {
 
     //lazy loading the image carousel
     if (scrolls > menuSec.scrollHeight && loaded === false) {
-        // console.log("triggered");
+
+        // set loaded to true so that images are only loaded once
         loaded = true;
         lazyImages.forEach((lazyImage) => {
             lazyImage.src = lazyImage.dataset.src;
@@ -123,6 +125,29 @@ function showSlides(n) {
     slides[slideIndex - 1].classList.add('current-slide');
 }
 // ------------------------------------------------------------------------------------
+// JQuery smoothScroll  -- thanks to Traversy Media
+
+function smoothScroll(e) {
+    if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800);
+    }
+}
+
+//---------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
 
 window.onload = readyPage();
 window.addEventListener("scroll", scrollThrottler);
