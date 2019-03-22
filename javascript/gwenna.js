@@ -21,7 +21,8 @@ function readyPage() {
     // sets listeners for buttons requiring js actions
     document.querySelector('#open-menu').addEventListener("click", openSideMenu);
     document.querySelector('#close-menu').addEventListener("click", closeSideMenu);
-    
+    document.querySelector('.reveal-mail').addEventListener("click", revealEmail);
+
     $('header a').on("click", smoothScroll);
 
 
@@ -140,8 +141,30 @@ function smoothScroll(e) {
 }
 
 //---------------------------------------------------------------------------------------
+//Reveal the email-address fot the user
+
+function revealEmail() {
+    let reveal = document.querySelector(".reveal-mail");
+
+    const a = "<a hre",
+        b = 'f="m',
+        c = 'ailto: han',
+        d = 'nah@gwenna',
+        e = 'teahouse.com',
+        f = '">han',
+        g = 'nah',
+        h = '@',
+        i = 'gwennateahouse',
+        j = '.c',
+        k = 'om</a>';
+
+    // console.log(a + b + c + d + e + f +g + h + i + j + k);
+    reveal.innerHTML = a + b + c + d + e + f +g + h + i + j + k;
+    reveal.style.border = 'none';
+}
 
 
+// hannah@gwennateahouse.com
 
 
 
