@@ -164,9 +164,6 @@ function revealEmail() {
 }
 
 
-// hannah@gwennateahouse.com
-
-
 
 
 
