@@ -125,7 +125,7 @@ function showSlides(n) {
     slides[slideIndex - 1].classList.add('current-slide');
 }
 // ------------------------------------------------------------------------------------
-// JQuery smoothScroll 
+// JQuery smoothScroll  -- thanks to Traversy Media
 
 function smoothScroll(e) {
     if (this.hash !== '') {
