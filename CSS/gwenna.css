@@ -437,6 +437,20 @@ header .right-large {
     -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
 }
+
+
+.reveal-mail {
+    color: pink;
+    border: 1px dashed pink;
+    cursor: pointer;
+}
+
+.reveal-mail:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
 .social-icons {
     display: flex;
     justify-content: space-around;
