@@ -59,11 +59,11 @@
         <!-- hidden side menu -->
         <div class="side-menu" id="side-menu">
             <a id="close-menu" class="close-menu">&times;</a>
-            <a href="#menu" class="fix">Menu</a>
-            <a href="#location" class="fix">Find Us</a>
-            <a href="#contact" class="fix">Contact</a>
-            <a href="https://www.facebook.com/gwennateahouseporth/" rel="noopener" target="_blank" class="fix"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/gwennateahouse/" rel="noopener"target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#menu"  onClick="closeSideMenu();" class="fix">Menu</a>
+            <a href="#location"  onClick="closeSideMenu();" class="fix">Find Us</a>
+            <a href="#contact"  onClick="closeSideMenu();"class="fix">Contact</a>
+            <a href="https://www.facebook.com/gwennateahouseporth/"  onClick="closeSideMenu();" rel="noopener" target="_blank" class="fix"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/gwennateahouse/" rel="noopener"  onClick="closeSideMenu();" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </header>
     <!--when is mobile veiw, wrapper is moved down 100px by this div-->
@@ -71,11 +71,11 @@
     <div class="home-link" id="home-slim"></div>
     <div id="wrapper" class="wrapper">
         <section class="welcome">
-            <p>Come to our Teahouse by the sea. We are a family run tea rooms that’s all about homemade cakes and good quality food. Our cream teas are fast becoming known as some of the best in Cornwall! We are proud to source our ingredients and products locally where it doesn’t compromise on quality.
-                <br>
-                We welcome sandy shoes and friendly dogs.
+            <h1>Gwenna Teahouse at Porth</h1>
+            <p>Come to our Teahouse by the sea. We are a family run tea rooms that’s all about homemade cakes and good quality food. Our cream teas are fast becoming known as some of the best in Cornwall! We are proud to source our ingredients and products locally where it doesn’t compromise on quality.  We welcome sandy shoes and friendly dogs.
             </p>
         </section>
+
         <section class="open">
             <div class="open-content">
                 <div class="first-div">
@@ -84,6 +84,9 @@
                     <h4>June, July, August </h4>
                     <p>9:30 - 16:30</p>
                     <p>closed Tuesdays</p>
+                    <br>
+                    <div class="divider"></div>
+                    <br>
                     <h4>{ low season }</h4>
                     <p>10:00 - 16:00</p>
                     <p>Wednesday - Sunday</p>
@@ -97,17 +100,17 @@
                 </div>
             </div>
         </section>
-        <!--         <section class="open2">
-            <br>
-        </section> -->
+
         <section class="menu">
             <div class="menu-link" id="menu"></div>
-            <a href="images/Black_board_drinks.gif" data-lightbox="main-menu" data-title="Gwenna Teahouse" data-alt="our menu"><img src="images/menu-snip.jpg" alt="menu"></a>
-            <a href="images/menu_drinks.gif" data-lightbox="main-menu" data-title="Drinks Menu" data-alt="our drinks"></a>
-            <br>
-            <p> There are vegan options available and we will do our best to accommodate and dietary requirements.</p>
-            <p>We also serve afternoon tea which comes with a selection of finger sandwiches, scones with jam and cream and a selection of sweet treats.</p>
+            <a href="./images/food-menu.png" data-lightbox="main-menu" data-title="Gwenna Teahouse" data-alt="our menu"><img src="./images/menu-snip.jpg" alt="menu"></a>
+            <a href="./images/drinks-menu.png" data-lightbox="main-menu" data-title="Drinks Menu" data-alt="our drinks"></a>
+            <p>There are vegan options available and we will do our best to accommodate and dietary requirements.  
+                <br>
+                We also serve afternoon tea which comes with a selection of finger sandwiches, scones with jam and cream and a selection of sweet treats.</p>
         </section>
+
+
         <section class="location">
             <div class="location-link" id="location"></div>
             <a href="https://www.google.com/maps/place/Gwenna+Teahouse/@50.4229313,-5.0592242,17z/data=!3m1!4b1!4m5!3m4!1s0x486b0e1498c383ef:0x7b16b7b165217038!8m2!3d50.4229313!4d-5.0570355" rel="noopener" target="_blank">
@@ -127,54 +130,67 @@
         </section>
         <section class="contact">
             <div class="contact-link" id="contact"></div>
-            <p> The Teahouse is available for private hire, please email us for details and quotes. Booking is required with at least 24hours notice. Message us with Facebook or by email ...</p><span class="reveal-mail"> <p>CLICK TO REVEAL ADDRESS</p></span>
+            <p> The Teahouse is available for private hire, please email us for details and quotes. Booking is required with at least 24hours notice. Message us with Facebook or by email ...</p>
+            <span class="reveal-mail">
+                <p>CLICK TO REVEAL ADDRESS</p>
+            </span>
             </p>
             <br>
             <div class="social-icons">
                 <a href="https://www.facebook.com/gwennateahouseporth/" rel="noopener" target="_blank"><i class="fab fa-facebook-square"></i></a><a href="https://www.instagram.com/gwennateahouse/" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </section>
+
         <section class="imgCar">
             <div class="slides first-slide" id="pictures">
-                <img src="images/scones.jpg" alt="scones" style="width:100%">
+                <img src="./images/scones.jpg" alt="scones" style="width:100%">
             </div>
             <div class="slides" id="pictures">
-                <img class="lazy" src="images/lazy-luggage.png" data-src="images/luggage.jpg" alt="luggage" style="width:100%">
+                <img class="lazy" src="./images/lazy-open.jpg" data-src="./images/open.jpg" alt="our cafe" style="width:100%">
             </div>
             <div class="slides" id="pictures">
-                <img class="lazy" src="images/lazy-sponge-top.png" data-src="images/blue-berry-sponge-top.jpg" alt="blue berry cake" style="width:100%">
+                <img class="lazy" src="./images/lazy-luggage.png" data-src="./images/luggage.jpg" alt="luggage" style="width:100%">
             </div>
             <div class="slides" id="pictures">
-                <img class="lazy" src="images/lazy-cake-stand.png" data-src="images/cake-stand.jpg" alt="cake stand" style="width:100%">
+                <img class="lazy" src="./images/lazy-unicorn-cake.jpg" data-src="./images/unicorn-cake.jpg" alt="unicorn cake" style="width:100%">
             </div>
             <div class="slides" id="pictures">
-                <img class="lazy" src="images/lazy-b&s.png" data-src="images/bucket&spade-cake.jpg" alt="cake and flowers" style="width:100%">
+                <img class="lazy" src="./images/lazy-sponge-top.png" data-src="./images/blue-berry-sponge-top.jpg" alt="blue berry cake" style="width:100%">
             </div>
             <div class="slides" id="pictures">
-                <img class="lazy" src="images/lazy-blue.png" data-src=" images/blue-berry-sponge.jpg" alt="more cake" style="width:100%">
+                <img class="lazy" src="./images/lazy-cake-stand.png" data-src="./images/cake-stand.jpg" alt="cake stand" style="width:100%">
             </div>
             <div class="slides" id="pictures">
-                <img class="lazy" src="images/lazy-blue.png" data-src="images/christmas-tree-cake.jpg" alt="our cafe" style="width:100%">
+                <img class="lazy" src="./images/lazy-b&s.png" data-src="./images/bucket&spade-cake.jpg" alt="cake and flowers" style="width:100%">
+            </div>
+            <div class="slides" id="pictures">
+                <img class="lazy" src="./images/lazy-blue.png" data-src="./images/blue-berry-sponge.jpg" alt="more cake" style="width:100%">
+            </div>
+            <div class="slides" id="pictures">
+                <img class="lazy" src="./images/lazy-blue.png" data-src="./images/christmas-tree-cake.jpg" alt="our cafe" style="width:100%">
             </div>
         </section>
+
         <section class="about">
             <p> Gwenna Teahouse was once run by Sylvia May Mousley who retired in 1989. Sylvia's granddaughter, Hannah, has now re-opened Gwenna Teahouse during May 2017. Gwenna Cottage itself dates back by name to at least 1646, however all indications point to the cottage being much older!</p>
         </section>
+
         <section class="address">
-            <ul>
+            <ul>                
+                <li>Gwenna Teahouse</li>
                 <li>Porth Beach Rd</li>
                 <li>Newquay</li>
                 <li>TR7 3DR</li>
             </ul>
-            <p>phone number</p>
         </section>
+
         <div class="pic1"></div>
         <div class="pic2"></div>
         <div class="para1box">
-            <img class="rellax para" src="images/cake&flowers.jpg" data-rellax-percentage="0.7" alt="cake and flowers">
+            <img class="rellax para" src="./images/cake&flowers.jpg" data-rellax-percentage="0.7" alt="cake and flowers">
         </div>
         <div class="para2box">
-            <img class="rellax para" src="images/walnut-cake.jpg" data-rellax-percentage="0.7" alt="walnut cake">
+            <img class="rellax para" src="./images/walnut-cake.jpg" data-rellax-percentage="0.7" alt="walnut cake">
         </div>
         <div class="old-paint"></div>
     </div>
