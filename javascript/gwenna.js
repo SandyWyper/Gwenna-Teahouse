@@ -9,7 +9,6 @@ const lazyImages = [].slice.call(document.getElementsByClassName("lazy"));
 let loaded = false;
 
 
-
 // initialise slide show variables
 let slideIndex = 1;
 let autoPlay;
@@ -54,7 +53,7 @@ function closeSideMenu() {
 // --------------------------------------------------------------------------------
 function checkScroll(e) {
     //monitors the scroll position of the page to toggle a class that changes the nav-bar
-    const scrolls = window.scrollY
+    const scrolls = window.scrollY;
 
     if (scrolls > (headerLarge.scrollHeight - 100) && headerLarge.classList.contains("reveal")) {
         headerLarge.classList.toggle('reveal');

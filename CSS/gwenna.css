@@ -336,7 +336,7 @@ header .right-large {
 }
 
 .open h2 {
-    font-family: 'Suranna', serif;
+    /* font-family: 'Suranna', serif; */
     font-size: 24px;
     letter-spacing: 3px;
     font-weight: 100;
